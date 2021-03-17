@@ -1,0 +1,19 @@
+//Return the factorial of the provided integer.
+
+function factorialize(num) {
+    // Variable , has to be set with number 1 
+     let fact= 1;
+    // check is num is greater and equal than 0 
+     if( num >=0){
+       for (let i=num;i>0;i--){
+          fact *= i;
+       }
+       return console.log(fact);
+      }else{
+        // if num is negative o zero
+        return console.log('the number is not valid');
+      }
+  
+  }
+  
+  factorialize(5);

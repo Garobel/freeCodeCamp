@@ -1,0 +1,20 @@
+//Reverse the provided string.
+
+function reverseString(str) {
+  // creating array and variable
+    let arr = [];
+    let reverse = '';
+  // adding the string into the array 'arr'
+    for (let i = 0; i < str.length; i++) {
+        arr.push(str[i]);    
+    };
+  // using .pop mehod to delete last item an add it to reverse variable
+    for (let i = 0; i < str.length; i++) {        
+         reverse += arr.pop(i);
+        
+    };
+    
+    console.log(reverse);
+}
+  
+  reverseString("hello");

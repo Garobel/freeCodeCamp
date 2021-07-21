@@ -1,0 +1,21 @@
+function confirmEnding(str, target) {
+
+  let targetLength = target.length 
+  let strlength = str.length - targetLength 
+  let coinci = 0
+  
+  for(let i = strlength ; i <str.length ; i++){ 
+    for(let j = 0 ; j <targetLength ; j++) 
+      if(str[i] == target[j]){
+           coinci ++
+      }
+  }
+ if(coinci == targetLength){
+   return true
+ }else{
+   return false
+ }
+   
+}
+
+confirmEnding("Bastian", "n");
